@@ -11,14 +11,10 @@ inkomsten = {
 "Waterijsjes-totaal" :750
 }
 
-def som(inkomsten):
-    totaal = inkomsten["Aardbeien-ijs-totaal"] + inkomsten["Vanille-ijs-totaal"] + inkomsten["Chocolade-ijs-totaal"] + inkomsten["Waterijsjes-totaal"]
-    return totaal
-
-totaal_inkomsten = som()
+totaal_inkomsten = som(inkomsten)
 presenteer(inkomsten, totaal_inkomsten)
 
-with open('boekhouding.csv,, 'w',newline='') as csvfile:
+with open('boekhouding.csv, 'w',newline='') as csvfile:
           for key, value in inkomsten.items():
           writer = csv.writer(csvfile, delimiter=';')
           writer.writerow([key,value])

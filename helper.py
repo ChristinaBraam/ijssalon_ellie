@@ -16,5 +16,8 @@ def onderstreep(tekst= ""):
     uit.append("=" * len(tekst))
     return uit
 
+def som(inkomsten):
+    totaal = inkomsten["Aardbeien-ijs-totaal"] + inkomsten["Vanille-ijs-totaal"] + inkomsten["Chocolade-ijs-totaal"] + inkomsten["Waterijsjes-totaal"]
+    return totaal
 
 
