@@ -3,48 +3,53 @@ def aanbieding_1(smaak, prijs, korting):
     smaak = "aardbei"
     prijs = 4
     korting = prijs - prijs*0.1
-uitvoer = f("Vandaag in de aanbieding: Emmertje ijs (1 liter) in de smaak {smaak}, van {prijs} euro voor {korting} euro.")
-return uitvoer
+    uitvoer = f("Vandaag in de aanbieding: Emmertje ijs (1 liter) in de smaak {smaak}, van {prijs} euro voor {korting} euro.")
+    return uitvoer
 
 def inkomsten_totaal(inkomsten, btw):
-totaal = 0
-for bedrag in inkomsten:
-totaal += bedrag
-btw_bedrag = totaal * btw
-uitvoer = f("Het totaal van alle inkomsten van deze week is {totaal} euro, waarover {btw_bedrag} euro btw betaald dient te worden.")
-return totaal
+    totaal = 0
+    for bedrag in inkomsten:
+        totaal += bedrag
+        btw_bedrag = totaal * btw
+        uitvoer = f("Het totaal van alle inkomsten van deze week is {totaal} euro, waarover {btw_bedrag} euro btw betaald dient te worden.")
+        return totaal
 
 def laag_en_hoog(mijn_lijst):
-uitvoer = []
-return max en min
+    uitvoer = []
+    
+    laagste = min(mijn_lijst)
+    hoogste = max(mijn_lijst)
+    uitvoer.append(laagste)
+    uitvoer.append(hoogste)
+    return uitvoer
+
 print(laag_en_hoog)
 
 def gemiddelde(mijn_lijst):
-aantal = len(mijn_lijst)
-totaal = 0
-for element in mijn_lijst:
-totaal += element
-gemiddelde = totaal / totaal
-return f"De gemiddelde inkomsten deze week zijn {gemiddelde} euro."
+    aantal = len(mijn_lijst)
+    totaal = 0
+    for element in mijn_lijst:
+        totaal += element
+        gemiddelde = totaal / totaal
+    return f"De gemiddelde inkomsten deze week zijn {gemiddelde} euro."
 
 def meervoudig(invoer_lijst):
     el[5:10]
     el = int
-tijdelijk = laag_en_hoog(invoer_lijst)
-uitvoer = [tijdelijk[0],tijdelijk[1]]
-return uitvoer
+    tijdelijk = laag_en_hoog(invoer_lijst)
+    uitvoer = [tijdelijk[0],tijdelijk[1]]
+    return uitvoer
 
 def combinatie(invoer_lijst_2):
     meervoudig(invoer_lijst_2)
-korte_lijst = laag_en_hoog(invoer_lijst_2)
-uitvoer = mijn_functie_2(korte_lijst[0], korte_lijst[1])
-return uitvoer
-
-laagste = min(mijn_lijst)
-hoogste = max(mijn_lijst)
-uitvoer.append(laagste)
-uitvoer.append(hoogste)
-return uitvoer
+    korte_lijst = laag_en_hoog(invoer_lijst_2)
+    uitvoer = mijn_functie_2(korte_lijst[0], korte_lijst[1])
+    return uitvoer
+    laagste = min(mijn_lijst)
+    hoogste = max(mijn_lijst)
+    uitvoer.append(laagste)
+    uitvoer.append(hoogste)
+    return uitvoer
 
 
 
