@@ -5,7 +5,7 @@ def presenteer(dictionary, totaal):
     "Chocolade-ijs-totaal" : 1500,
     "Waterijsjes-totaal" : 750
     }
-    totaal = 5250
-    uitvoer = dictionary , "=" *25 , totaal
+    totaal = dictionary["Aardbeien-ijs-totaal"] + dictionary["Vanille-ijs-totaal"] + dictionary["Chocolade-ijs-totaal"] + dictionary["Waterijsjes-totaal"]
+    uitvoer = dictionary , "=" * 25, totaal, " "
     return uitvoer
 
